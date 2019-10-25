@@ -28,3 +28,6 @@ export default function App() {
 }
 
 
+// Google static api can be used for maps, routing and places
+// google geocoding can be used for converting address into lattitude and longitude and vice versa
+
