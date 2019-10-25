@@ -7,6 +7,11 @@ import PlacesNavigator from './navigation/PlacesNavigation';
 // When Adding expo device features to expo apps, no extra config is required
 
 import placesReducer from './store/places-reducer';
+import { init } from './helpers/db';
+
+init()
+  .then(() => console.log("Database Initilized"))
+  .catch(err => console.log(err));
 
 const rootReducer = combineReducers({
   places: placesReducer
